@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html ng-app="emusicality">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157729465-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-157729465-1');
+    </script>
+    <title>eMusicality</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86" />
+    <meta name="apple-mobile-web-app-title" content="eMusicality" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="darkContent" />
+    <meta property="og:title" content="Interactive Bachata Musicality Breakdown" />
+    <meta property="og:image" content="http://emusicality.co.uk/songs/0/cover.jpg" />
+    <meta property="og:description" content="Interactive Bachata Musicality Breakdown" />
+    <link rel="stylesheet" type="text/css" href="Content/bootswatch/darkly/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="Content/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="Content/emusicality.min.css" />
+    <link rel="apple-touch-icon" href="http://emusicality.co.uk/songs/0/cover.jpg" />
+    <link rel="icon" href="http://emusicality.co.uk/songs/0/cover.jpg" />
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary fixed-top">
+        <span class="navbar-brand mb-0 h1">Bachata Musicality</span>
+        <a class="nav-link text-info ml-auto mr-0 p-1" href="https://www.facebook.com/salsaaddict" target="_blank">
+            <i class="fa fa-fw fa-facebook-official"></i>
+            <span>DJ Pierre</span>
+        </a>
+    </nav>
+    <div class="container text-nowrap" style="max-width: 640px" ng-view></div>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/angular-sanitize.min.js"></script>
+    <script src="Scripts/Tone.min.js"></script>
+    <script src="Scripts/emusicality/emusicality.min.js"></script>
+</body>
+</html>

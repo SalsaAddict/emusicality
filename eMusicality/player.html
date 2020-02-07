@@ -1,0 +1,102 @@
+﻿<div class="card" ng-if="ctrl.song">
+    <div class="card-header p-2">
+        <div class="media">
+            <img ng-src="{{ctrl.song.imageUrl}}" class="mr-3 img-thumbnail" width="60" height="60" />
+            <div class="media-body">
+                <div class="pull-right text-center">
+                    <span class="badge badge-info">
+                        <span ng-bind="ctrl.song.bpm"></span>
+                        <span>bpm</span>
+                    </span>
+                    <br />
+                    <h5 ng-bind="ctrl.beat" class="font-weight-bold mt-1" ng-class="{ 'text-danger': ctrl.beat === 1, 'text-info': ctrl.beat !== 1 }" ng-if="ctrl.beat"></h5>
+                </div>
+                <h5 class="my-0 font-weight-bold" ng-bind-html="ctrl.song.title"></h5>
+                <span ng-bind-html="ctrl.song.artist"></span>
+            </div>
+        </div>
+    </div>
+    <div class="card-body" ng-if="!ctrl.loaded">
+        <div class="text-center">
+            <i class="fa fa-fw fa-spin fa-spinner"></i>
+            <span>Loading tracks&hellip;</span>
+        </div>
+    </div>
+    <div ng-if="ctrl.loaded">
+        <div class="card-body p-2">
+            <div class="row">
+                <div class="col-6 text-center">
+                    <h5 class="py-0">
+                        <small>Section</small>
+                        <br />
+                        <span ng-bind="ctrl.section.description" class="text-info font-weight-bold"></span>
+                    </h5>
+                </div>
+                <div class="col-6 text-center">
+                    <h5 class="py-0">
+                        <small>Rhythm/Structure</small>
+                        <br />
+                        <span ng-bind="ctrl.section.structure" class="text-info font-weight-bold"></span>
+                    </h5>
+                </div>
+            </div>
+            <div class="text-center">
+                <h5 class="py-0 my-0">
+                    <small>Phrasing</small>
+                </h5>
+                <div class="pb-2">
+                    <span ng-repeat="marker in ctrl.measureMarkers" ng-class="{ 'text-info': ctrl.measure === marker }" ng-switch="$last && ctrl.oddPhrase">
+                        <i ng-switch-when="false" class="fa fa-fw fa-square"></i>
+                        <i ng-switch-when="true" class="fa fa-fw fa-exclamation-triangle"></i>
+                    </span>
+                    <br />
+                    <span ng-repeat="marker in ctrl.beatMarkers" ng-class="{ 'text-info': ctrl.beat === marker }">
+                        <i class="fa fa-fw fa-circle"></i>
+                    </span>
+                </div>
+            </div>
+            <ul class="list-group" ng-if="ctrl.song.multitrack">
+                <li ng-repeat="track in ctrl.song.tracks" class="list-group-item p-2">
+                    <span ng-bind="track.description" class="text-capitalize"></span>
+                    <div class="pull-right">
+                        <div class="btn-group btn-group-sm">
+                            <button type="button" class="btn" ng-class="ctrl.volumeBtnClass(track, volume)"
+                                    ng-repeat="volume in ctrl.volumes"
+                                    ng-click="ctrl.setVolume(track, volume, $event)">
+                                <i class="fa fa-fw {{volume.faIcon}}"></i>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body" ng-if="ctrl.about">
+            <div ng-include="ctrl.aboutUrl" style="text-wrap: normal !important;"></div>
+        </div>
+        <div class="card-footer">
+            <div class="text-center">
+                <a href="#!/home" class="btn btn-dark" title="Home">
+                    <i class="fa fa-fw fa-home"></i>
+                </a>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-dark" ng-click="ctrl.restart($event)" title="Restart">
+                        <i class="fa fa-fw fa-fast-backward"></i>
+                    </button>
+                    <button type="button" class="btn btn-dark" ng-click="ctrl.back($event)" title="Back">
+                        <i class="fa fa-fw fa-backward"></i>
+                    </button>
+                    <button type="button" class="btn btn-dark" ng-click="ctrl.toggle($event)" ng-switch="ctrl.playing" title="Play/Pause">
+                        <i class="fa fa-fw fa-play" ng-switch-when="false"></i>
+                        <i class="fa fa-fw fa-pause" ng-switch-when="true"></i>
+                    </button>
+                    <button type="button" class="btn btn-dark" ng-click="ctrl.next($event)" title="Next">
+                        <i class="fa fa-fw fa-forward"></i>
+                    </button>
+                </div>
+                <a ng-href="{{ctrl.song.downloadUrl}}" class="btn btn-dark" ng-if="ctrl.song.downloadUrl" target="_blank" title="Download">
+                    <i class="fa fa-fw fa-cloud-download"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

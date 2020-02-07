@@ -1,0 +1,15 @@
+﻿<div class="text-center">
+    <h5>Choose a song&hellip;</h5>
+</div>
+<div class="list-group">
+    <a class="list-group-item list-group-item-action p-2" ng-repeat="song in ctrl.songs | orderBy: 'title'" ng-href="#!/player/{{song.id}}">
+        <div class="media">
+            <img ng-src="{{song.imageUrl}}" class="mr-3 img-thumbnail" width="60" height="60" />
+            <div class="media-body">
+                <span class="pull-right badge badge-primary" ng-if="song.multitrack">Multitrack</span>
+                <h5 class="my-0 font-weight-bold" ng-bind-html="song.title"></h5>
+                <span ng-bind-html="song.artist"></span>
+            </div>
+        </div>
+    </a>
+</div>

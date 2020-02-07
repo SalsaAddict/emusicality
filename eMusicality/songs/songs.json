@@ -1,0 +1,198 @@
+[
+  {
+    "title": "Me Emborrachare",
+    "artist": "Grupo Extra &amp; DJ Tiguere",
+    "imageUrl": "cover.jpg",
+    "downloadUrl": "https://islandtouchdance.com/ELTiguere/index.php",
+    "bpm": 124,
+    "offset": 0.34,
+    "tracks": [
+      {
+        "description": "Bongo",
+        "audioUrl": "bongo.mp3"
+      },
+      {
+        "description": "Guira",
+        "audioUrl": "guira.mp3"
+      },
+      {
+        "description": "Bass Guitar",
+        "audioUrl": "bass.mp3"
+      },
+      {
+        "description": "Rhythm Guitar (Segunda)",
+        "audioUrl": "segunda.mp3",
+        "offset": 2.1
+      },
+      {
+        "description": "Lead Guitar (Primer/Requinto)",
+        "audioUrl": "requinto.mp3",
+        "offset": 1.4,
+        "volumeNormal": -15,
+        "volumeBoost": -5
+      }
+    ],
+    "sections": [
+      {
+        "description": "Start",
+        "structure": "Count-In",
+        "bars": 1
+      },
+      {
+        "description": "Intro",
+        "structure": "Majao",
+        "bars": 8
+      },
+      {
+        "description": "Verse",
+        "structure": "Derecho",
+        "bars": 8
+      },
+      {
+        "description": "Chorus",
+        "structure": "Majao",
+        "bars": 8
+      },
+      {
+        "description": "Bridge",
+        "structure": "Derecho",
+        "bars": 8
+      },
+      {
+        "description": "Verse",
+        "structure": "Derecho",
+        "bars": 8
+      },
+      {
+        "description": "Chorus",
+        "structure": "Majao",
+        "bars": 8
+      },
+      {
+        "description": "Bridge",
+        "structure": "Urban/Majao",
+        "bars": 4
+      },
+      {
+        "description": "Chorus",
+        "structure": "Majao",
+        "bars": 8
+      },
+      {
+        "description": "Mambo",
+        "structure": "Majao",
+        "bars": 8
+      },
+      {
+        "description": "Breakdown",
+        "structure": "Urban",
+        "bars": 9
+      },
+      {
+        "description": "Chorus",
+        "structure": "Majao",
+        "bars": 8
+      },
+      {
+        "description": "Bridge",
+        "structure": "Urban/Majao",
+        "bars": 4
+      },
+      {
+        "description": "Chorus",
+        "structure": "Majao",
+        "bars": 8
+      },
+      {
+        "description": "End",
+        "structure": "End",
+        "bars": 2
+      }
+    ]
+  },
+  {
+    "title": "Besito a Besito",
+    "artist": "Luis Miguel del Amargue",
+    "imageUrl": "cover.jpg",
+    "bpm": 133,
+    "offset": 0.82,
+    "tracks": [
+      {
+        "description": "Besito a Besito",
+        "audioUrl": "song.mp3"
+      }
+    ],
+    "sections": [
+      {
+        "description": "Intro",
+        "structure": "Derecho",
+        "bars": 8
+      },
+      {
+        "description": "Mini Mambo",
+        "structure": "Majao",
+        "bars": 4
+      },
+      {
+        "description": "Verse",
+        "structure": "Derecho",
+        "bars": 13
+      },
+      {
+        "description": "Chorus",
+        "structure": "Majao",
+        "bars": 7
+      },
+      {
+        "description": "Verse",
+        "structure": "Derecho",
+        "bars": 9
+      },
+      {
+        "description": "Chorus",
+        "structure": "Majao",
+        "bars": 7
+      },
+      {
+        "description": "Bridge",
+        "structure": "Derecho",
+        "bars": 8
+      },
+      {
+        "description": "Mambo",
+        "structure": "Majao",
+        "bars": 16
+      },
+      {
+        "description": "Verse",
+        "structure": "Derecho",
+        "bars": 13
+      },
+      {
+        "description": "Chorus",
+        "structure": "Majao",
+        "bars": 7
+      },
+      {
+        "description": "Verse",
+        "structure": "Derecho",
+        "bars": 9
+      },
+      {
+        "description": "Chorus",
+        "structure": "Majao",
+        "bars": 11
+      },
+      {
+        "description": "Outro",
+        "structure": "Derecho",
+        "bars": 3
+      },
+      {
+        "description": "End",
+        "structure": "End",
+        "bars": 2
+      }
+    ]
+  }
+]

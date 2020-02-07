@@ -1,0 +1,20 @@
+[
+  {
+    "outputFileName": "Scripts/Tone.min.js",
+    "inputFiles": [
+      "Scripts/Tone.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/emusicality/emusicality.min.js",
+    "inputFiles": [
+      "Scripts/emusicality/emusicality.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/emusicality.min.css",
+    "inputFiles": [
+      "Content/emusicality.css"
+    ]
+  }
+]
