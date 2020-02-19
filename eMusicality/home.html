@@ -6,7 +6,7 @@
         <div class="media">
             <img ng-src="{{song.imageUrl}}" class="mr-3 img-thumbnail" width="60" height="60" />
             <div class="media-body">
-                <span class="pull-right badge badge-primary" ng-if="song.multitrack">Multitrack</span>
+                <span class="pull-right badge badge-success animated rubberBand" ng-if="song.multitrack">Multitrack</span>
                 <h5 class="my-0 font-weight-bold" ng-bind-html="song.title"></h5>
                 <span ng-bind-html="song.artist"></span>
             </div>

@@ -194,5 +194,169 @@
         "bars": 2
       }
     ]
+  },
+  {
+    "title": "Eso Es Amor",
+    "artist": "Jiory",
+    "imageUrl": "cover.jpg",
+    "bpm": 132,
+    "offset": 1.8,
+    "tracks": [
+      {
+        "description": "Vocals",
+        "audioUrl": "vocals.mp3"
+      },
+      {
+        "description": "Bongo",
+        "audioUrl": "bongo.mp3"
+      },
+      {
+        "description": "Guira",
+        "audioUrl": "guira.mp3"
+      },
+      {
+        "description": "Kick Drum",
+        "audioUrl": "kick.mp3"
+      },
+      {
+        "description": "Bass Guitar",
+        "audioUrl": "bass.mp3"
+      },
+      {
+        "description": "Rhythm Guitar (Segunda)",
+        "audioUrl": "segunda.mp3"
+      },
+      {
+        "description": "Lead Guitar (Primer/Requinto)",
+        "audioUrl": "requinto.mp3"
+      }
+    ],
+    "sections": [
+      {
+        "description": "Intro",
+        "structure": "Intro",
+        "bars": 5
+      },
+      {
+        "description": "Verse",
+        "structure": "Derecho",
+        "bars": 10
+      },
+      {
+        "description": "Verse",
+        "structure": "Derecho",
+        "bars": 8
+      },
+      {
+        "description": "Bridge",
+        "structure": "Bridge",
+        "bars": 5
+      },
+      {
+        "description": "Chorus",
+        "structure": "Majao",
+        "bars": 4
+      },
+      {
+        "description": "Chorus",
+        "structure": "Derecho",
+        "bars": 4
+      },
+      {
+        "description": "Chorus",
+        "structure": "Majao",
+        "bars": 4
+      },
+      {
+        "description": "Chorus",
+        "structure": "Derecho",
+        "bars": 4
+      },
+      {
+        "description": "Verse",
+        "structure": "Derecho",
+        "bars": 10
+      },
+      {
+        "description": "Verse",
+        "structure": "Derecho",
+        "bars": 8
+      },
+      {
+        "description": "Bridge",
+        "structure": "Bridge",
+        "bars": 5
+      },
+      {
+        "description": "Chorus",
+        "structure": "Majao",
+        "bars": 4
+      },
+      {
+        "description": "Chorus",
+        "structure": "Derecho",
+        "bars": 4
+      },
+      {
+        "description": "Chorus",
+        "structure": "Majao",
+        "bars": 4
+      },
+      {
+        "description": "Chorus",
+        "structure": "Derecho",
+        "bars": 4
+      },
+      {
+        "description": "Bridge",
+        "structure": "Derecho",
+        "bars": 3
+      },
+      {
+        "description": "Chorus",
+        "structure": "Derecho",
+        "bars": 4
+      },
+      {
+        "description": "Mambo",
+        "structure": "Majao",
+        "bars": 5
+      },
+      {
+        "description": "Mambo",
+        "structure": "Majao",
+        "bars": 5
+      },
+      {
+        "description": "Verse",
+        "structure": "Derecho",
+        "bars": 9
+      },
+      {
+        "description": "Chorus",
+        "structure": "Majao",
+        "bars": 4
+      },
+      {
+        "description": "Chorus",
+        "structure": "Derecho",
+        "bars": 4
+      },
+      {
+        "description": "Chorus",
+        "structure": "Majao",
+        "bars": 4
+      },
+      {
+        "description": "Chorus",
+        "structure": "Derecho",
+        "bars": 3
+      },
+      {
+        "description": "End",
+        "structure": "End",
+        "bars": 4
+      }
+    ]
   }
 ]

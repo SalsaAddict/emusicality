@@ -67,6 +67,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\animate.css" />
+    <Content Include="Content\animate.min.css">
+      <DependentUpon>animate.css</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -188,6 +192,10 @@
     <Content Include="Scripts\emusicality\emusicality.min.js">
       <DependentUpon>emusicality.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\emusicality\sw.js" />
+    <Content Include="Scripts\emusicality\sw.min.js">
+      <DependentUpon>sw.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
@@ -303,7 +311,14 @@
     <Content Include="songs\0\segunda.mp3" />
     <Content Include="songs\1\song.mp3" />
     <Content Include="songs\1\cover.jpg" />
+    <Content Include="songs\2\bass.mp3" />
+    <Content Include="songs\2\bongo.mp3" />
     <Content Include="songs\2\cover.jpg" />
+    <Content Include="songs\2\guira.mp3" />
+    <Content Include="songs\2\kick.mp3" />
+    <Content Include="songs\2\requinto.mp3" />
+    <Content Include="songs\2\segunda.mp3" />
+    <Content Include="songs\2\vocals.mp3" />
     <Content Include="Web.config" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />

@@ -16,5 +16,17 @@
     "inputFiles": [
       "Content/emusicality.css"
     ]
+  },
+  {
+    "outputFileName": "Scripts/emusicality/sw.min.js",
+    "inputFiles": [
+      "Scripts/emusicality/sw.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/animate.min.css",
+    "inputFiles": [
+      "Content/animate.css"
+    ]
   }
 ]

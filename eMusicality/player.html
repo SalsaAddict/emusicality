@@ -45,12 +45,12 @@
                     <small>Phrasing</small>
                 </h5>
                 <div class="pb-2">
-                    <span ng-repeat="marker in ctrl.measureMarkers" ng-class="{ 'text-info': ctrl.measure === marker }" ng-switch="$last && ctrl.oddPhrase">
+                    <div ng-repeat="marker in ctrl.measureMarkers" class="d-inline-block" ng-class="{ 'text-info animated heartBeat': ctrl.measure === marker }" ng-switch="$last && ctrl.oddPhrase">
                         <i ng-switch-when="false" class="fa fa-fw fa-square"></i>
                         <i ng-switch-when="true" class="fa fa-fw fa-exclamation-triangle"></i>
-                    </span>
+                    </div>
                     <br />
-                    <span ng-repeat="marker in ctrl.beatMarkers" ng-class="{ 'text-info': ctrl.beat === marker }">
+                    <span ng-repeat="marker in ctrl.beatMarkers" ng-class="{ 'text-info animated': ctrl.beat === marker }">
                         <i class="fa fa-fw fa-circle"></i>
                     </span>
                 </div>
@@ -85,7 +85,7 @@
                     <button type="button" class="btn btn-dark" ng-click="ctrl.back($event)" title="Back">
                         <i class="fa fa-fw fa-backward"></i>
                     </button>
-                    <button type="button" class="btn btn-dark" ng-click="ctrl.toggle($event)" ng-switch="ctrl.playing" title="Play/Pause">
+                    <button type="button" class="btn btn-dark animated tada" ng-click="ctrl.toggle($event)" ng-switch="ctrl.playing" title="Play/Pause">
                         <i class="fa fa-fw fa-play" ng-switch-when="false"></i>
                         <i class="fa fa-fw fa-pause" ng-switch-when="true"></i>
                     </button>

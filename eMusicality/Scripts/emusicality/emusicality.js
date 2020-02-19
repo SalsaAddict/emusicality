@@ -17,8 +17,7 @@ var eMusicality;
     }
     eMusicality.config = config;
     function run() {
-        let fn = function () {
-        };
+        let fn = function () { };
         fn.$inject = [];
         return fn;
     }

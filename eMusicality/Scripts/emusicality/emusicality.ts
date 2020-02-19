@@ -18,9 +18,7 @@ namespace eMusicality {
         return fn;
     }
     export function run(): ng.Injectable<Function> {
-        let fn: Function = function (): void {
-
-        };
+        let fn: Function = function (): void { };
         fn.$inject = [];
         return fn;
     }
